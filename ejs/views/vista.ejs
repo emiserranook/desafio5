@@ -1,0 +1,27 @@
+<div class="jumbotron">
+    <h1>Vista de productos</h1>
+    <br>
+
+    <% if(hayProductos) { %>
+        <div class="table-responsive">
+            <table class="table table-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Foto</th>
+                </tr>
+                <% productos.forEach((producto) => { %>
+                    <tr>
+                        <td><%= producto.title %></td>
+                        <td><%= producto.price %></td>
+                        <td><img width="50" src=<%= producto.thumbnail %> alt="not found"></td>
+                    </tr>
+                    <% }) %>
+            </table>
+            <button onclick="window.open('/', '_blank')" class="btn btn-info">Ingresar productos</button>
+        </div>
+        <% } else{ %>
+            <h3 class="alert alert-warning">No existen datos</h3>
+            <% } %>
+
+</div>

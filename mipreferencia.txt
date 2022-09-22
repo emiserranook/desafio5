@@ -1,0 +1,1 @@
+mi motor de plantilla preferida para mi proyecto es EJS porque es mas intuitiva y mas facil de utilizar porque utiliza puro javascript.
